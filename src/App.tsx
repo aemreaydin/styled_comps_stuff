@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hero from "./components/Hero";
 
+import "./App.css";
+import vlada from "./images/vlada.jpg";
+import vito from "./images/teddy_tavan.jpg";
+import Banner from "./components/Banner";
+import BasicInput from "./components/Input";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Hero image={vlada}>
+        <Banner title="This is the title" />
+      </Hero>
+      <Hero big image={vito}>
+        <Banner title="This is another title" />
+      </Hero> */}
+      <BasicInput padding={"1rem"} />
     </div>
   );
 }
